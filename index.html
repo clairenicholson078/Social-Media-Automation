@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social Media Automation</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="libs/leader-line.min.js"></script>
+    <style>
+        .bar {
+            height: 100%;
+            width: 50px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            background-color: darkslategray;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .bar img {
+            margin: 5px;
+            border-radius: 50px;
+            border: 2px solid white;
+            background-color: white;
+            vertical-align: middle;
+        }
+
+        .main {
+            height: 100%;
+            min-height: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        .main>p {
+            text-align: center;
+        }
+
+        .dashboard {
+            height: 300px;
+            width: 300px;
+            background-color: #8a6d3b;
+            border-radius: 300px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .dashboard p {
+            margin: 0;
+        }
+
+        .small-label {
+            font-size: small;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .offwhite {
+            color: gainsboro;
+        }
+
+        .margin50 {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar left img-container">
+        <div class="img-content">
+            <img src="assets/instagram.svg" alt="istagram" height="40" width="40" id="left-instagram">
+            <img src="assets/facebook.svg" alt="istagram" height="40" width="40" id="left-facebook">
+            <img src="assets/telegram.svg" alt="istagram" height="40" width="40" id="left-telegram">
+            <img src="assets/twitter.svg" alt="istagram" height="40" width="40" id="left-twitter">
+            <img src="assets/behance.svg" alt="istagram" height="40" width="40" id="left-behance">
+            <img src="assets/blogger.svg" alt="istagram" height="40" width="40" id="left-blogger">
+            <img src="assets/linkedin.svg" alt="istagram" height="40" width="40" id="left-linkedin">
+            <img src="assets/pinterest.svg" alt="istagram" height="40" width="40" id="left-pinterest">
+            <img src="assets/skype.svg" alt="istagram" height="40" width="40" id="left-skype">
+            <img src="assets/whatsapp.svg" alt="istagram" height="40" width="40" id="left-whatsapp">
+            <img src="assets/youtube.svg" alt="istagram" height="40" width="40" id="left-youtube">
+        </div>
+    </div>
+
+    <div class="main">
+        <p>Social Media Automation</p>
+        <div class="main-circle">
+            <div class="dashboard">
+                <!-- pending approval  -->
+                <div class="row margin50">
+                    <div class="col-md-6 center col-md-offset-3">
+                        <p class="small-label offwhite">Pending for approval</p>
+                        <p class="center white">256</p>
+                    </div>
+                </div>
+                <!-- messages scheduled  -->
+                <div class="row">
+                    <div class="col-md-6 center">
+                        <p class="small-label center offwhite">Posts Scheduled for future</p>
+                        <p class="center white">256</p>
+                    </div>
+                    <!-- messages sent -->
+                    <div class="col-md-6 center">
+                        <p class="small-label center offwhite">Posts sent to social media</p>
+                        <p class="center white">256</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bar right">
+        <img src="assets/instagram.svg" alt="istagram" height="40" width="40" id="right-instagram">
+        <img src="assets/facebook.svg" alt="istagram" height="40" width="40" id="right-facebook">
+        <img src="assets/telegram.svg" alt="istagram" height="40" width="40" id="right-telegram">
+        <img src="assets/twitter.svg" alt="istagram" height="40" width="40" id="right-twitter">
+        <img src="assets/behance.svg" alt="istagram" height="40" width="40" id="right-behance">
+        <img src="assets/blogger.svg" alt="istagram" height="40" width="40" id="right-blogger">
+        <img src="assets/linkedin.svg" alt="istagram" height="40" width="40" id="right-linkedin">
+        <img src="assets/pinterest.svg" alt="istagram" height="40" width="40" id="right-pinterest">
+        <img src="assets/skype.svg" alt="istagram" height="40" width="40" id="right-skype">
+        <img src="assets/whatsapp.svg" alt="istagram" height="40" width="40" id="right-whatsapp">
+        <img src="assets/youtube.svg" alt="istagram" height="40" width="40" id="right-youtube">
+    </div>
+</body>
+<script src="libs/leader-line.min.js"></script>
+<script src="line-helper.js"></script>
+<script src="libs/numberAnimate.js"></script>
+<script src="index.js"></script>
+</html>
